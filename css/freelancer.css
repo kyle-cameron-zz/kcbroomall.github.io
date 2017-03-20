@@ -27,7 +27,7 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 700;
 }
 hr.star-light,
@@ -51,6 +51,7 @@ hr.star-primary:after {
 }
 hr.star-light {
   border-color: white;
+  box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 hr.star-light:after {
   background-color: #000000;
@@ -75,25 +76,51 @@ header .container {
   padding-top: 100px;
   padding-bottom: 50px;
 }
+
+#headerwrap {
+  background: url(/img/background1.png) no-repeat center fixed;
+  margin-top: 0;
+  padding-top: 20em;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 120%;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 header img {
   display: block;
   margin: 0 auto 20px;
 }
 header .intro-text .name {
   display: block;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 700;
   font-size: 2em;
 }
 header .intro-text .skills {
+  display: block;
   font-size: 1.25em;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-weight: 300;
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 200px;
-    padding-bottom: 100px;
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 20em;
   }
   header .intro-text .name {
     font-size: 4.75em;
@@ -113,11 +140,11 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-brand:hover{
-  color: red;
+  color: 000000;
 },
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand.active {
-  color: red;
+  color: 000000;
 }
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
@@ -126,7 +153,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #C0C0C0;
+  color: #000000;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
@@ -134,9 +161,11 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #000000;
+  background: #625ACB;
 }
-.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:hover{
+  color: #625ACB;
+},
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
@@ -145,10 +174,12 @@ header .intro-text .skills {
 .navbar-custom .navbar-toggle {
   color: white;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 2em;
   border-color: white;
 }
-.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:hover {
+  background-color: #625ACB;
+},
 .navbar-custom .navbar-toggle:focus {
   background-color: #000000;
   color: white;
@@ -157,18 +188,18 @@ header .intro-text .skills {
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
+    -webkit-transition: padding 0.25s;
+    -moz-transition: padding 0.25s;
+    transition: padding 0.25s;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    transition: all 0.25s;
   }
   .navbar-custom.affix {
-    padding: 10px 0;
+    padding: 5px 0;
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
@@ -335,8 +366,8 @@ footer .footer-below {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #1a242f;
-  border-color: #161f29;
+  background-color: #000000;
+  border-color: #c0c0c0;
 }
 .btn-primary:active,
 .btn-primary.active,
