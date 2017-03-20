@@ -18,7 +18,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #C0C0C0;
+  color: #000000;
 }
 h1,
 h2,
@@ -53,22 +53,22 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #C0C0C0;
+  background-color: #000000;
   color: white;
 }
 hr.star-primary {
-  border-color: #000000;
+  border-color: #C0C0C0;
 }
 hr.star-primary:after {
   background-color: white;
-  color: #000000;
+  color: #C0C0C0;
 }
 .img-centered {
   margin: 0 auto;
 }
 header {
   text-align: center;
-  background: #C0C0C0;
+  background: #000000;
   color: white;
 }
 header .container {
@@ -103,7 +103,7 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #000000;
+  background: #C0C0C0;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -134,13 +134,13 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #C0C0C0;
+  background: #000000;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #C0C0C0;
+  background: #000000;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -150,9 +150,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #C0C0C0;
+  background-color: #000000;
   color: white;
-  border-color: #C0C0C0;
+  border-color: #000000;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -182,7 +182,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #C0C0C0;
+  background: #000000;
   color: white;
 }
 @media (max-width: 767px) {
@@ -204,7 +204,7 @@ section.success {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
+  background: #000000;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -298,14 +298,14 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #000000;
+  background-color: #C0C0C0;
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #233140;
+  background-color: #000000;
 }
 .btn-outline {
   color: white;
@@ -319,14 +319,14 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #C0C0C0;
+  color: #000000;
   background: white;
   border: solid 2px white;
 }
 .btn-primary {
   color: white;
-  background-color: #000000;
-  border-color: #000000;
+  background-color: #C0C0C0;
+  border-color: #C0C0C0;
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -358,17 +358,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #000000;
-  border-color: #000000;
+  background-color: #C0C0C0;
+  border-color: #C0C0C0;
 }
 .btn-primary .badge {
-  color: #000000;
+  color: #C0C0C0;
   background-color: white;
 }
 .btn-success {
   color: white;
-  background-color: #C0C0C0;
-  border-color: #C0C0C0;
+  background-color: #000000;
+  border-color: #000000;
   font-weight: 700;
 }
 .btn-success:hover,
@@ -377,8 +377,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: white;
-  background-color: #128f76;
-  border-color: #11866f;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn-success:active,
 .btn-success.active,
@@ -401,10 +401,10 @@ fieldset[disabled] .btn-success:active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
   background-color: #C0C0C0;
-  border-color: #C0C0C0;
+  border-color: #000000;
 }
 .btn-success .badge {
-  color: #C0C0C0;
+  color: #000000;
   background-color: white;
 }
 .btn-social {
@@ -468,7 +468,7 @@ fieldset[disabled] .btn-success.active {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #000000;
+  background-color: #C0C0C0;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -479,7 +479,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #000000;
+  background-color: #C0C0C0;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
@@ -508,7 +508,7 @@ fieldset[disabled] .btn-success.active {
   position: absolute;
   left: 0px;
   top: 0px;
-  background: #C0C0C0;
+  background: #000000;
   outline: 0;
   transition: top 0.1s ease-in, background 0.5s linear;
 }
