@@ -8,10 +8,10 @@ body {
   overflow-x: hidden;
 }
 p {
-  font-size: 20px;
+  font-size: 2em;
 }
 p.small {
-  font-size: 16px;
+  font-size: 1.6em;
 }
 a,
 a:hover,
@@ -56,13 +56,16 @@ hr.star-light {
 hr.star-light:after {
   background-color: #000000;
   color: white;
+  box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 hr.star-primary {
-  border-color: #C0C0C0;
+  border-color: white;
+  box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 hr.star-primary:after {
   background-color: white;
-  color: #C0C0C0;
+  color: black;
+  box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .img-centered {
   margin: 0 auto;
@@ -76,7 +79,6 @@ header .container {
   padding-top: 100px;
   padding-bottom: 50px;
 }
-
 #headerwrap {
   background: url(/img/background1.png) no-repeat center fixed;
   margin-top: 0;
@@ -84,7 +86,7 @@ header .container {
   text-align: center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 120%;
+  min-height: 100vh;
   width: 100%;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -95,7 +97,9 @@ header .container {
   -o-background-size: cover;
   background-size: cover;
 }
-
+#portfolio_container {
+  max-height: 100vh;
+}
 header img {
   display: block;
   margin: 0 auto 20px;
@@ -224,8 +228,26 @@ section.success {
     padding-top: 75px;
   }
 }
+#portfolio {
+  padding: 5vh 0px 0px 0px;
+  height: 100vh;
+}
+#portfolio .container {
+  height: 90vh;
+}
+
+#portfolio .portfolio_title {
+  height: 20vh;
+  vertical-align: baseline;
+}
+
+#portfolio .portfolio_items * {
+  height: 70vh;
+  vertical-align: baseline;
+}
+
 #portfolio .portfolio-item {
-  margin: 0 0 15px;
+  margin: 0 0 0 0;
   right: 0;
 }
 #portfolio .portfolio-item .portfolio-link {
@@ -245,13 +267,13 @@ section.success {
   -moz-transition: all ease 0.5s;
 }
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
   position: absolute;
   width: 100%;
-  height: 20px;
-  font-size: 20px;
+  height: 2px;
+  font-size: 2em;
   text-align: center;
   top: 50%;
   margin-top: -12px;
@@ -269,7 +291,7 @@ section.success {
 }
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
-    margin: 0 0 30px;
+    margin: 4vh 0 4vh 0;
   }
 }
 .floating-label-form-group {
@@ -340,7 +362,7 @@ footer .footer-below {
 }
 .btn-outline {
   color: white;
-  font-size: 20px;
+  font-size: 2em;
   border: solid 2px white;
   background: transparent;
   transition: all 0.3s ease-in-out;
@@ -445,7 +467,7 @@ fieldset[disabled] .btn-success.active {
   border: 2px solid white;
   border-radius: 100%;
   text-align: center;
-  font-size: 20px;
+  font-size: 2em;
   line-height: 45px;
 }
 .scroll-top {
@@ -457,7 +479,7 @@ fieldset[disabled] .btn-success.active {
   z-index: 1049;
 }
 .scroll-top .btn {
-  font-size: 20px;
+  font-size: 2em;
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -469,36 +491,38 @@ fieldset[disabled] .btn-success.active {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
-  min-height: 100%;
-  padding: 100px 0;
+  max-height: 90vh;
   text-align: center;
+}
+.portfolio-modal .modal-img {
+  max-height: 50vh;
 }
 .portfolio-modal .modal-content h2 {
   margin: 0;
   font-size: 3em;
 }
 .portfolio-modal .modal-content img {
-  margin-bottom: 30px;
+  margin-bottom: 3em;
 }
 .portfolio-modal .modal-content .item-details {
-  margin: 30px 0;
+  margin: 3em 0;
 }
 .portfolio-modal .close-modal {
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 7.5em;
+  height: 7.5em;
   background-color: transparent;
-  top: 25px;
-  right: 25px;
+  top: 2.5em;
+  right: 2.5em;
   cursor: pointer;
 }
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
 .portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
+  height: 7.5em;
+  width: 0.1em;
+  margin-left: 3.5em;
   background-color: #C0C0C0;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -508,8 +532,8 @@ fieldset[disabled] .btn-success.active {
   z-index: 1051;
 }
 .portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
+  height: 7.5em;
+  width: 0.1em;
   background-color: #C0C0C0;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
