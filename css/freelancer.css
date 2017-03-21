@@ -219,12 +219,9 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  /*background: #000000;*/
-  color: black;
-  
   background: url(/img/background1.png) no-repeat center fixed;
   margin-top: 0;
-  padding-top: 20em;
+  /*padding-top: 8em;*/
   text-align: center;
   background-attachment: relative;
   background-position: center center;
@@ -240,7 +237,6 @@ section.success {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
 }
 @media (max-width: 767px) {
   section {
@@ -634,8 +630,28 @@ fieldset[disabled] .btn-success.active {
   opacity: 1;
   display: none;
 }
+.about-text {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 .about-div {
-  font-size: 0.5em;
+  font-size: 0.75em;
+  text-align: center;
+  max-height: 100%;
+  display: block;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: 300;
+  margin: 5em 0 5em 0;
+  width: 50%;
+}
+.accomplishments {
+  float: left;
+  max-width: 100%;
+}
+.technologies {
+  float: right;
+  max-width: 100%;
 }
 #skipnav a {
   padding: 6px;
