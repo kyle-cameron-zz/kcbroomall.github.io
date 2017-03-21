@@ -88,7 +88,8 @@ header .container {
   background-position: center center;
   min-height: 100vh;
   max-height: 120vh;
-  width: 100%;
+  max-width: 100%;
+  /*width: 100%;*/
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
@@ -218,8 +219,28 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #000000;
-  color: white;
+  /*background: #000000;*/
+  color: black;
+  
+  background: url(/img/background1.png) no-repeat center fixed;
+  margin-top: 0;
+  padding-top: 20em;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 100vh;
+  max-height: 120vh;
+  max-width: 100%;
+  /*width: 100%;*/
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
 @media (max-width: 767px) {
   section {
@@ -496,17 +517,23 @@ fieldset[disabled] .btn-success.active {
   text-align: center;
 }
 .portfolio-modal .modal-img {
-  max-height: 50vh;
+  display: block;
+  /*text-align: center;*/
+  max-width: 100%;
+  max-height: 10%;
+  margin-left: auto; margin-right: auto; text-align: left;
 }
 .portfolio-modal .modal-content h2 {
-  margin: 0;
+  margin: 0 0 0 0;
   font-size: 3em;
 }
 .portfolio-modal .modal-content img {
-  margin-bottom: 3em;
+  margin: 0 0 0 0;
+  vertical-align: middle;
 }
 .portfolio-modal .modal-content .item-details {
-  margin: 3em 0;
+  margin: 1vh 0 1vh 0;
+  max-height: 20vh;
 }
 .portfolio-modal .close-modal {
   position: absolute;
@@ -532,6 +559,66 @@ fieldset[disabled] .btn-success.active {
   /* Safari and Chrome */
   z-index: 1051;
 }
+.portfolio-modal .modal-holder {
+  margin: 0 0 0 0;
+  height: 100vh;
+}
+.portfolio-modal .modal-body {
+  margin: 0 0 0 0;
+  height: 100vh;
+}
+.portfolio-modal .modal-items-wrapper {
+  max-height: 80%;
+  /*width: 100%;*/
+  text-align: center;
+  margin: 0 0 0 0;
+  overflow: auto;
+}
+.portfolio-modal .modal-left {
+  max-width: 23%;
+  margin: 0 1vw 0 0;
+  float: left;
+}
+.portfolio-modal .modal-middle {
+  max-height: 60%;
+  max-width: 50%;
+  margin: 0 0 0 0;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.portfolio-modal .modal-title {
+  /*text-decoration: underline;*/
+  margin: 2vh 0vh 2vh 0vh
+}
+.portfolio-modal .modal-right {
+  max-width: 23%;
+  margin: 0 0 0 1vw;
+  float: right;
+}
+.portfolio-modal .modal-description {
+  font-size: 1em;
+  text-align: left;
+  margin: 0 0 0 0;
+}
+.portfolio-modal .modal-features {
+  font-size: 1em;
+  text-align: left;
+  margin: 0 0 0 0;
+}
+.portfolio-modal .modal-priorities {
+  font-size: 1em;
+  text-align: left;
+}
+.portfolio-modal .modal-priorities-list {
+  font-size: 1em;
+  text-align: left;
+}
+.portfolio-modal .modal-technologies {
+  font-size: 1em;
+  text-align: center;
+}
 .portfolio-modal .close-modal .lr .rl {
   height: 7.5em;
   width: 0.1em;
@@ -544,8 +631,11 @@ fieldset[disabled] .btn-success.active {
   z-index: 1052;
 }
 .portfolio-modal .modal-backdrop {
-  opacity: 0;
+  opacity: 1;
   display: none;
+}
+.about-div {
+  font-size: 0.5em;
 }
 #skipnav a {
   padding: 6px;

@@ -156,7 +156,7 @@
 
 <!-- About Section -->
 <section class="success" id="about">
-  <div class="container">
+  <div class="container about-container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2>About</h2>
@@ -164,15 +164,17 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4 col-lg-offset-2">
-        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+      <div class="col-lg-4 col-lg-offset-2 about-div">
+        <p>I have built several start-to-finish full-stack applications employing a variety of the latest technologies including React, Angular, and Redux on the front-end, Node and Express on the back-end, and implemented both relational (MySQL) and non-relational (MongoDB) databases.
+          I have professional experience in investment banking, where I worked with fortune 500 technology companies, especially in the software sector, on mergers & acquisitions, leveraged buyouts, and financings.</p>
       </div>
-      <div class="col-lg-4">
-        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+      <div class="col-lg-4 about-div">
+        <p>I have skills in the following: Javascript, Python, SQL, AngularJS, React.js, Redux,
+          Node.js, Express.js, Socket.io, MongoDB, MySQL, HTML, jQuery, CSS, Backbone.js, Boostrap, Semantic UI, KnexJSm Bookshelf.js, PassportJS, Git, Grunt, Gulp, AWS, TDD, Financial Analysis, Financial Modelling & Valuation</p>
       </div>
       <div class="col-lg-8 col-lg-offset-2 text-center">
-        <a href="#" class="btn btn-lg btn-outline">
-          <i class="fa fa-download"></i> Download Theme
+        <a href="mailto:kyle@kcbroomall.com" class="btn btn-lg btn-outline">
+          <i class="fa fa-email"></i> Email Me
         </a>
       </div>
     </div>
@@ -298,44 +300,53 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="modal-holder">
           <div class="modal-body">
             <h2>Hackopoly</h2>
             <hr class="star-primary">
-            <div>
-              <img src="img/portfolio/hackopoly.png" class="img-responsive img-centered modal-img" alt="">
-              <p class="modal-description">
-                This is a true-to-the-original, full-featured reproduction of everyone's favorite Monopoly game.
-              </p>
-              <p class="modal-features">
-                Features include email and Facebook authentication, sockets for real-time gameplay and chat, a lobby for messaging other players and entering game rooms, pausing games to be resumed later, and in-game cash and property trading.
-              </p>
-              <p class="modal-priorities">
-                Prioritized solving 3 of Monopoly's biggest problems:
-              <ul>
-                <li>
-                  Slow Gameplay: Implemented a virtual banker, digital dice roll, automatic token movement, and timers to limit delays
-                </li>
-                <li>
-                  Confusion Around Rules: Used the original Monopoly rule book to create and test for every possible user story
-                </li>
-                <li>
-                  Unfinished Games: Created ability for users to store the state of a game for use at a later period
-                </li>
-              </ul>
-              </p>
+            <div class="modal-items-wrapper">
+              <div class="modal-left">
+                <h4 class="modal-title">Description</h4>
+                <p class="modal-description">
+                  This is a true-to-the-original, full-featured reproduction of everyone's favorite Monopoly game.
+                </p>
+                <h4 class="modal-title">Features</h4>
+                <p class="modal-features">
+                  Features include email and Facebook authentication, sockets for real-time gameplay and chat, a lobby for messaging other players and entering game rooms, pausing games to be resumed later, and in-game cash and property trading.
+                </p>
+              </div>
+              <div class="modal-middle">
+                <img src="img/portfolio/hackopoly.png" class="modal-img" alt="">
+              </div>
+              <div class="modal-right">
+                <h4 class="modal-title">Priorities</h4>
+                <p class="modal-priorities">
+                  Prioritized solving 3 of Monopoly's biggest problems:
+                <ul class="modal-priorities-list">
+                  <li>
+                    Slow Gameplay: Implemented a virtual banker, digital dice roll, automatic token movement, and timers to limit delays
+                  </li>
+                  <li>
+                    Confusion Around Rules: Used the original Monopoly rule book to create and test for every possible user story
+                  </li>
+                  <li>
+                    Unfinished Games: Created ability for users to store the state of a game for use at a later period
+                  </li>
+                </ul>
+                </p>
+                <h4 class="modal-title">Technologies</h4>
+                <p class="modal-technologies">
+                  - React - Redux - Node.js - Express - Socket.io - MySQL - MongoDB - Passport - Semantic UI -
+                </p>
+              </div>
             </div>
             <ul class="list-inline item-details">
-              <li>Client:
-                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+              <li>Link:
+                <strong><a href="http://bit.ly/hackopoly">bit.ly/hackopoly</a>
                 </strong>
               </li>
-              <li>Date:
-                <strong><a href="http://startbootstrap.com">April 2014</a>
-                </strong>
-              </li>
-              <li>Service:
-                <strong><a href="http://startbootstrap.com">Web Development</a>
+              <li>Github:
+                <strong><a href="https://github.com/kcbroomall/Monopoly">kcbroomall/monopoly</a>
                 </strong>
               </li>
             </ul>
@@ -356,44 +367,44 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="modal-holder">
           <div class="modal-body">
             <h2>MyStock</h2>
             <hr class="star-primary">
-            <div>
-            <img src="img/portfolio/mystock.png" class="img-responsive img-centered modal-img" alt="">
-            <p class="modal-description">
-              This is a true-to-the-original, full-featured reproduction of everyone's favorite Monopoly game.
-            </p>
-            <p class="modal-features">
-              Features include email and Facebook authentication, sockets for real-time gameplay and chat, a lobby for messaging other players and entering game rooms, pausing games to be resumed later, and in-game cash and property trading.
-            </p>
-            <p class="modal-priorities">
-              Prioritized solving 3 of Monopoly's biggest problems:
-            <ul>
-              <li>
-                Slow Gameplay: Implemented a virtual banker, digital dice roll, automatic token movement, and timers to limit delays
-              </li>
-              <li>
-                Confusion Around Rules: Used the original Monopoly rule book to create and test for every possible user story
-              </li>
-              <li>
-                Unfinished Games: Created ability for users to store the state of a game for use at a later period
-              </li>
-            </ul>
-            </p>
-          </div>
+            <div class="modal-items-wrapper">
+              <div class="modal-left">
+                <h4 class="modal-title">Description</h4>
+                <p class="modal-description">
+                  MyStock is an intuitive, bare-bones stock portfolio application
+                </p>
+                <h4 class="modal-title">Features</h4>
+                <p class="modal-features">
+                  Features include real-time securities prices, watch lists, rendering graphical representations, performance analysis, and authentication.
+                </p>
+              </div>
+              <div class="modal-middle">
+                <img src="img/portfolio/mystock.png" class="modal-img" alt="">
+              </div>
+              <div class="modal-right">
+                <h4 class="modal-title">Priorities</h4>
+                <p class="modal-priorities">
+                  Prioritized real-time pricing updates through the IEX API, as well as relevant
+                  portfolio performance analytics.
+                </p>
+                <h4 class="modal-title">Technologies</h4>
+                <p class="modal-technologies">
+                  - AngularJS - Node.js - Express - MongoDB - Boostrap -
+                </p>
+              </div>
+            </div>
             <ul class="list-inline item-details">
-              <li>Client:
-                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+              <li>Link:
+                <strong><a href="http://bit.ly/my-stock">bit.ly/my-stock</a>
                 </strong>
               </li>
-              <li>Date:
-                <strong><a href="http://startbootstrap.com">April 2014</a>
-                </strong>
-              </li>
-              <li>Service:
-                <strong><a href="http://startbootstrap.com">Web Development</a>
+              <li>Github:
+                <strong><a href="https://github.com/kcbroomall/MyStock-A_Ticker_Tracker">
+                  kcbroomall/MyStock-A_Ticker_Tracker</a>
                 </strong>
               </li>
             </ul>
@@ -414,159 +425,48 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="modal-holder">
           <div class="modal-body">
             <h2>Goal Track</h2>
             <hr class="star-primary">
-            <div>
-            <img src="img/portfolio/goal_track.png" class="img-responsive img-centered modal-img" alt="">
-            <p class="modal-description">
-              This is a true-to-the-original, full-featured reproduction of everyone's favorite Monopoly game.
-            </p>
-            <p class="modal-features">
-              Features include email and Facebook authentication, sockets for real-time gameplay and chat, a lobby for messaging other players and entering game rooms, pausing games to be resumed later, and in-game cash and property trading.
-            </p>
-            <p class="modal-priorities">
-              Prioritized solving 3 of Monopoly's biggest problems:
-              <ul>
-                <li>
-                  Slow Gameplay: Implemented a virtual banker, digital dice roll, automatic token movement, and timers to limit delays
-                </li>
-                <li>
-                  Confusion Around Rules: Used the original Monopoly rule book to create and test for every possible user story
-                </li>
-                <li>
-                  Unfinished Games: Created ability for users to store the state of a game for use at a later period
-                </li>
-              </ul>
-            </p>
+            <div class="modal-items-wrapper">
+              <div class="modal-left">
+                <h4 class="modal-title">Description</h4>
+                <p class="modal-description">
+                  Goal Track is a one-stop-shop for keeping on top of your goals.
+                </p>
+                <h4 class="modal-title">Features</h4>
+                <p class="modal-features">
+                  Features include authentication, email reminders, friends lists, visibility
+                  permissions, and calendar synchronization.
+                </p>
+              </div>
+              <div class="modal-middle">
+                <img src="img/portfolio/goal_track.png" class="modal-img" alt="">
+              </div>
+              <div class="modal-right">
+                <h4 class="modal-title">Priorities</h4>
+                <p class="modal-priorities">
+                  Prioritized integration through the Cronofy API, allowing users to sync with
+                  both iCalendar and Google Calendar.
+                </p>
+                <h4 class="modal-title">Technologies</h4>
+                <p class="modal-technologies">
+                  - AngularJS - Node.js - Express - SQLite - Knex.js - Passport
+                </p>
+              </div>
             </div>
             <ul class="list-inline item-details">
-              <li>Client:
-                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+              <li>Link:
+                <strong><a href="http://bit.ly/goal-track">bit.ly/Goal-Track</a>
                 </strong>
               </li>
-              <li>Date:
-                <strong><a href="http://startbootstrap.com">April 2014</a>
-                </strong>
-              </li>
-              <li>Service:
-                <strong><a href="http://startbootstrap.com">Web Development</a>
+              <li>Github:
+                <strong><a href="https://github.com/kcbroomall/goaltrack">kcbroomall/goaltrack</a>
                 </strong>
               </li>
             </ul>
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Project Title</h2>
-            <hr class="star-primary">
-            <img src="img/portfolio/game.png" class="img-responsive img-centered modal-img" alt="">
-            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-            <ul class="list-inline item-details">
-              <li>Client:
-                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                </strong>
-              </li>
-              <li>Date:
-                <strong><a href="http://startbootstrap.com">April 2014</a>
-                </strong>
-              </li>
-              <li>Service:
-                <strong><a href="http://startbootstrap.com">Web Development</a>
-                </strong>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Project Title</h2>
-            <hr class="star-primary">
-            <img src="img/portfolio/safe.png" class="img-responsive img-centered modal-img" alt="">
-            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-            <ul class="list-inline item-details">
-              <li>Client:
-                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                </strong>
-              </li>
-              <li>Date:
-                <strong><a href="http://startbootstrap.com">April 2014</a>
-                </strong>
-              </li>
-              <li>Service:
-                <strong><a href="http://startbootstrap.com">Web Development</a>
-                </strong>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Project Title</h2>
-            <hr class="star-primary">
-            <img src="img/portfolio/submarine.png" class="img-responsive img-centered modal-img" alt="">
-            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-            <ul class="list-inline item-details">
-              <li>Client:
-                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                </strong>
-              </li>
-              <li>Date:
-                <strong><a href="http://startbootstrap.com">April 2014</a>
-                </strong>
-              </li>
-              <li>Service:
-                <strong><a href="http://startbootstrap.com">Web Development</a>
-                </strong>
-              </li>
-            </ul>
-            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
           </div>
         </div>
       </div>
