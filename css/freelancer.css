@@ -87,6 +87,7 @@ header .container {
   background-attachment: relative;
   background-position: center center;
   min-height: 100vh;
+  max-height: 120vh;
   width: 100%;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
