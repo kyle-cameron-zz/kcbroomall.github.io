@@ -32,7 +32,7 @@ hr.star-primary {
   border-top: solid 5px;
   text-align: center;
   max-width: 250px;
-  margin: 25px auto 30px;
+  margin: 2.5em auto 3em;
 }
 hr.star-light:after,
 hr.star-primary:after {
@@ -71,8 +71,8 @@ header {
   color: white;
 }
 header .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 5 em;
+  padding-bottom: em;
 }
 #headerwrap {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/background1.png) no-repeat center fixed;
@@ -641,12 +641,12 @@ fieldset[disabled] .btn-success.active {
 .about-me {
   float: left;
   width: 45%;
-  margin: 0 2em 0 0;
+  margin: 0 2% 0 0;
 }
 .about-skills {
   float: right;
   width: 45%;
-  margin: 0 0 0 2em;
+  margin: 0 0 0 2%;
 }
 .accomplishments {
   float: left;
@@ -657,10 +657,10 @@ fieldset[disabled] .btn-success.active {
   max-width: 100%;
 }
 #skipnav a {
-  padding: 6px;
+  padding: 0.6vw;
   position: absolute;
-  top: -40px;
-  left: 0px;
+  top: -4.0vw;
+  left: 0vw;
   color: white;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
