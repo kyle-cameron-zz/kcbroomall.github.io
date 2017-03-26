@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
 
     //primary navigation slide-in effect
     if ($(window).width() > MQL) {
-        var headerHeight = $('#mainNav').height();
+        var headerHeight = $('.navbar-custom').height();
         $(window).on('scroll', {
                 previousTop: 0
             },
@@ -24,15 +24,15 @@ jQuery(document).ready(function($) {
                 //check if user is scrolling up
                 if (currentTop < this.previousTop) {
                     //if scrolling up...
-                    if (currentTop > 0 && $('#mainNav').hasClass('is-fixed')) {
-                        $('#mainNav').addClass('is-visible');
+                    if (currentTop > 0 && $('.navbar-custom').hasClass('is-fixed')) {
+                        $('.navbar-custom').addClass('is-visible');
                     } else {
-                        $('#mainNav').removeClass('is-visible is-fixed');
+                        $('.navbar-custom').removeClass('is-visible is-fixed');
                     }
                 } else if (currentTop > this.previousTop) {
                     //if scrolling down...
-                    $('#mainNav').removeClass('is-visible');
-                    if (currentTop > headerHeight && !$('#mainNav').hasClass('is-fixed')) $('#mainNav').addClass('is-fixed');
+                    $('.navbar-custom').removeClass('is-visible');
+                    if (currentTop > headerHeight && !$('.navbar-custom').hasClass('is-fixed')) $('.navbar-custom').addClass('is-fixed');
                 }
                 this.previousTop = currentTop;
             });
