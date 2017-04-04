@@ -6,7 +6,7 @@
 
 ## Code Climate
 
-+[![Code Climate](https://codeclimate.com/github/kcbroomall/kcbroomall.github.io.png)](https://codeclimate.com/github/kcbroomall/kcbroomall.github.io)
+[![Code Climate](https://codeclimate.com/github/kcbroomall/kcbroomall.github.io.png)](https://codeclimate.com/github/kcbroomall/kcbroomall.github.io)
 
 ## Travis CI
 
