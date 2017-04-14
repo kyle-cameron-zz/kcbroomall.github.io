@@ -1,12 +1,14 @@
-var gulp = require('gulp');
-var less = require('gulp-less');
-var browserSync = require('browser-sync').create();
-var header = require('gulp-header');
-var cleanCSS = require('gulp-clean-css');
-var rename = require("gulp-rename");
-var uglify = require('gulp-uglify');
-var filter = require('gulp-filter');
-var pkg = require('./package.json');
+const gulp = require('gulp');
+const less = require('gulp-less')
+const browserSync = require('browser-sync').create();
+const header = require('gulp-header');
+const cleanCSS = require('gulp-clean-css');
+const rename = require("gulp-rename");
+const banner = require('gulp-banner')
+const uglify = require('gulp-uglify');
+const filter = require('gulp-filter');
+const eslint = require('gulp-eslint');
+const pkg = require('./package.json');
 
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
@@ -42,6 +44,14 @@ gulp.task('minify-js', function() {
         .pipe(browserSync.reload({
             stream: true
         }))
+});
+
+// lint JS files
+gulp.task('lint', () => {
+  return gulp.src(['**/*.js','!node_modules/**'])
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
 });
 
 // Copy vendor libraries from /node_modules into /vendor
